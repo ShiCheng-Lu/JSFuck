@@ -84,7 +84,7 @@ class Trans {
             case 'string':
                 return new Trans(`${this.value}`, `${this.fuck}+[]`);
             case 'number':
-                return new Trans(parseInt(value), `+(${this.fuck})`);
+                return new Trans(parseInt(this.value), `+(${this.fuck})`);
         }
     }
 
